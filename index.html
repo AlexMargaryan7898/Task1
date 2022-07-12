@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<script>
+var inputarr = [];
+var size = prompt("Enter Array Size")
+ 
+for(i=0;i<size;i++){
+  inputarr[i]=[Math.floor(Math.random() * 10)]
+
+}
+function count_duplicate(inputarr){
+ let myObj = {}
+
+ for(let i =0; i < inputarr.length; i++){ 
+     if (myObj[inputarr[i]]){
+     myObj[inputarr[i]] += 1
+     } else {
+     myObj[inputarr[i]] = 1
+     }
+    }  
+    for (i = 0;i<myObj;i++){
+        if (myObj[i] >= 2){
+            console.log(i + " counted: " + myObj[prop] + " times.")
+        }
+    }
+  console.log(myObj)
+}
+let test =1
+count_duplicate(inputarr)
+</script>
+
+</body>
+</html>
